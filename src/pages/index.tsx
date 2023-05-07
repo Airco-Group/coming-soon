@@ -1,9 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
-import bgImage from "../../public/Paint-2.webp";
-import Logo from "../../public/airco-main.png";
+import bgImage from "../../public/comingSoonBg.jpg";
 
 export default function Home(): NextPage {
   return (
@@ -63,6 +61,49 @@ export default function Home(): NextPage {
               immediate assistance. You can trust Airco for all your surface
               preparation and finishing requirements
             </p>
+          </div>
+
+          <div>
+            <form name="Contact Us" netlify>
+              <div className="flex gap-4">
+                <label className="mb-2 block text-sm font-bold text-gray-700">
+                  Name:
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Full Name"
+                    className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                  />
+                </label>
+                <label className="mb-2 block text-sm font-bold text-gray-700">
+                  Email Address:{" "}
+                  <input
+                    type="email"
+                    placeholder="email"
+                    id="email"
+                    className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                  />
+                </label>
+              </div>
+              <label className="mb-2 block text-sm font-bold text-gray-700">
+                Description
+                <textarea
+                  name="description"
+                  id="description"
+                  placeholder="Write your message here.."
+                  rows="10"
+                  className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                ></textarea>
+                <div className="mt-4 flex justify-end">
+                  <button
+                    class="focus:shadow-outline rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none"
+                    type="submit"
+                  >
+                    Send
+                  </button>
+                </div>
+              </label>
+            </form>
           </div>
         </div>
       </main>
