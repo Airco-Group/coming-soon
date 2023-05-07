@@ -1,9 +1,8 @@
-import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import bgImage from "../../public/comingSoonBg.jpg";
 
-export default function Home(): NextPage {
+export default function Home() {
   return (
     <>
       <Head>

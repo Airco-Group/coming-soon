@@ -1,5 +1,3 @@
-import { type NextPage } from "next";
-
-export default function Success(): NextPage {
+export default function Success() {
   return <div>Successfully submitted the form!</div>;
 }
