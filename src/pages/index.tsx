@@ -64,7 +64,7 @@ export default function Home(): NextPage {
           </div>
 
           <div>
-            <form name="Contact Us" netlify>
+            <form name="Contact Us" action="/success" netlify>
               <div className="flex gap-4">
                 <label className="mb-2 block text-sm font-bold text-gray-700">
                   Name:
