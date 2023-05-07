@@ -63,7 +63,7 @@ export default function Home() {
           </div>
 
           <div>
-            <form name="Contact Us" action="/success" netlify>
+            <form name="Contact Us" action="/success" data-netlify="true">
               <div className="flex gap-4">
                 <label className="mb-2 block text-sm font-bold text-gray-700">
                   Name:
@@ -90,12 +90,12 @@ export default function Home() {
                   name="description"
                   id="description"
                   placeholder="Write your message here.."
-                  rows="10"
+                  rows={10}
                   className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
                 ></textarea>
                 <div className="mt-4 flex justify-end">
                   <button
-                    class="focus:shadow-outline rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none"
+                    className="focus:shadow-outline rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none"
                     type="submit"
                   >
                     Send
