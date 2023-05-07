@@ -69,6 +69,7 @@ export default function Home() {
                   Name:
                   <input
                     type="text"
+                    name="full_name"
                     id="name"
                     placeholder="Your Full Name"
                     className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
@@ -78,6 +79,7 @@ export default function Home() {
                   Email Address:{" "}
                   <input
                     type="email"
+                    name="email"
                     placeholder="email"
                     id="email"
                     className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
