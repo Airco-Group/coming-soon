@@ -63,9 +63,9 @@ export default function Home() {
           </div>
 
           <div>
-            <form name="Contact Us" action="/success" data-netlify={true}>
+            <form name="Contact Us" action="/success" data-netlify="true">
               <div className="flex gap-4">
-              <input type="hidden" name="contact_us" value="Contact us" />
+              <input type="hidden" name="form-name" value="Contact Us" />
                 <label className="mb-2 block text-sm font-bold text-gray-700">
                   Name:
                   <input
